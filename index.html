@@ -51,8 +51,6 @@
                         this.play();
                    }, false);
                 }
-                //var playmusic=confirm("Would you like background music?");
-                //if (playmusic) alert("⚠️Audio may cause lag on slow networks.⚠️");
                 function main(){
                     var res_y=window.screen.availHeight; //y axis pixel count
                     var res_x=window.screen.availWidth; //horizontal pixel count
@@ -234,7 +232,7 @@
                     //end game
                     function endgame(){
                         clearInterval(timer);
-                        if (confirm("GAME OVER!\nScore :"+score+"\nPlay again?")) {
+                        if (confirm("Jogo encerrado. Digite ok para jogar novamente.")) {
                             main();
                         } else {
                             return 0;
